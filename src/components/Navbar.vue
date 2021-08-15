@@ -5,7 +5,7 @@
         <router-link to="">
           <span class="nav-title">Delismoothies</span>
         </router-link>
-        <a href="" class="btn-floating btn-larger harlfway-fab pink">
+        <a href="" class="btn-floating btn-large halfway-fab pink">
           <router-link to="">
             <i class="material-icons">add</i>
           </router-link>
