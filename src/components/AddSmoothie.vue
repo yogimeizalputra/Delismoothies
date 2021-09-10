@@ -1,7 +1,7 @@
 <template>
     <div class="add-smoothie container">
         <h2 class="center-align indigo-text">Add New Smoothie Recipe</h2>
-        <form>
+        <form @submit.prevent="AddSmoothie">
             <div class="field title">
                 <label for="title">Smoothie Title</label>
                 <input type="text" name="title" v-model="title">
@@ -20,14 +20,30 @@
 <script>
 export default {
     name: 'AddSmoothie',
-    data(){
+    data () {
         return{
             title: null
         }
-    }
+    },
+    methods: {
+        AddSmoothie() {
+            
+        }
+    },
 }
 </script>
 
 <style>
-
+    .add-smoothie {
+        margin-top: 60px;
+        padding: 20px;
+        max-width: 500px;
+    }
+    .add-smoothie h2 {
+        font-size: 2em;
+        margin: 20px auto;
+    }
+    .add-smoothie .field {
+        margin: 20px auto;
+    }
 </style>
