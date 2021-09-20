@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import AddSmoothie from '../components/AddSmoothie.vue'
+import EditSmoothie from '../components/EditSmoothie.vue'
 
 
 const routes = [
@@ -21,6 +22,11 @@ const routes = [
     path: '/add-smoothie',
     name: 'AddSmoothie',
     component: AddSmoothie
+  },
+  {
+    path: '/edit-smoothie/:smoothie_slug',
+    name: 'EditSmoothie',
+    component: EditSmoothie
   }
 ]
 
